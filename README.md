@@ -1,2 +1,2 @@
 # storage-wrap
-A light wrapper for the Web Storage API.
+A thin wrapper for the Web Storage API.
