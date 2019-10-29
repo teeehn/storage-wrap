@@ -1,5 +1,5 @@
 {
-  "name": "storage-wrap",
+  "name": "@tomnicolosi/storage-wrap",
   "version": "1.0.0",
   "description": "A thin wrapper for the storage API.",
   "main": "index.js",
