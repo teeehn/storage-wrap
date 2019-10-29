@@ -2,13 +2,27 @@
   "name": "@tomnicolosi/storage-wrap",
   "version": "1.0.0",
   "description": "A thin wrapper for the storage API.",
-  "main": "index.js",
+  "main": "dist/storage-wrap.cjs.js",
+  "module": "dist/storage-wrap.esm.js",
+  "browser": "dist/storage-wrap.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build"
   },
   "author": "Thomas Nicolosi",
   "license": "MIT",
+  "repository": "https://github.com/teeehn/storage-wrap",
   "devDependencies": {
-    "rollup": "^1.25.2"
-  }
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "rollup": "^1.25.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
