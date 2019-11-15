@@ -68,9 +68,11 @@ function storage_clear(storage_type) {
     }
 }
 
-export const StorageWrap = {
+const StorageWrap = {
     storage_clear,
     storage_delete,
     storage_read,
     storage_write
 };
+
+export default StorageWrap;
