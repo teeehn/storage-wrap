@@ -1,6 +1,6 @@
 {
   "name": "@tomnicolosi/storage-wrap",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A thin wrapper for the storage API.",
   "main": "dist/storage-wrap.cjs.js",
   "module": "dist/storage-wrap.esm.js",
