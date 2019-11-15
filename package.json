@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "mocha --require mock-local-storage",
+    "test": "mocha --watch",
     "pretest": "npm run build"
   },
   "author": "Thomas Nicolosi",
