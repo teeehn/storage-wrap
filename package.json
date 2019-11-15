@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require mock-local-storage",
     "pretest": "npm run build"
   },
   "author": "Thomas Nicolosi",
@@ -17,6 +17,9 @@
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "mock-local-storage": "^1.1.10",
     "rollup": "^1.25.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
