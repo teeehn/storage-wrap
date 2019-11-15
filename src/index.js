@@ -60,6 +60,14 @@ function storage_delete(key, storage_type = "localStorage") {
     }
 }
 
+function storage_get_length(storage_type) {
+    if (storage_available(storage_type)) {
+        return window[storage_type].length;
+    } else {
+        throw "Unable to get storage length.";
+    }
+}
+
 function storage_clear(storage_type) {
     if (storage_available(storage_type)) {
         window[storage_type].clear();
@@ -71,6 +79,7 @@ function storage_clear(storage_type) {
 const StorageWrap = {
     storage_clear,
     storage_delete,
+    storage_get_length,
     storage_read,
     storage_write
 };
