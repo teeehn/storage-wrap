@@ -1,7 +1,7 @@
 # storage-wrap
 A thin wrapper for the Web Storage API.
 
-Uses code from MDN to check for storage availabllity prior to running storage methods.
+Uses code from MDN to check for storage availability prior to running storage methods.
 (Reference: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#Feature-detecting_localStorage).
 
 ## Basic usage:
