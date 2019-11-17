@@ -60,7 +60,7 @@ function storage_delete(key, storage_type = "localStorage") {
     }
 }
 
-function storage_get_length(storage_type) {
+function storage_get_length(storage_type = "localStorage") {
     if (storage_available(storage_type)) {
         return window[storage_type].length;
     } else {
@@ -68,7 +68,7 @@ function storage_get_length(storage_type) {
     }
 }
 
-function storage_clear(storage_type) {
+function storage_clear(storage_type = "localStorage") {
     if (storage_available(storage_type)) {
         window[storage_type].clear();
     } else {
@@ -84,4 +84,4 @@ const StorageWrap = {
     storage_write
 };
 
-export default StorageWrap;
+module.exports = StorageWrap;
