@@ -7,6 +7,7 @@ require("mock-local-storage");
 window.localStorage = global.localStorage;
 
 describe("StorageWrap and localStorage mock are set up correctly.", function () {
+
     it("typeof StorageWrap is an object", function () {
         assert.typeOf(StorageWrap, "object");
     });
@@ -29,7 +30,7 @@ describe("StorageWrap and localStorage mock are set up correctly.", function () 
         });
 
         it("storage_get_length is 0", function () {
-            assert.equal(storage_get_length("localStorage"), 0);
+            assert.equal(storage_get_length(), 0);
         });
     });
 
@@ -43,16 +44,16 @@ describe("StorageWrap and localStorage mock are set up correctly.", function () 
 
         it("Writes and reads a value correctly.", function () {
             storage_write("test_value", "__test-value__");
-            assert.equal(storage_get_length("localStorage"), 1);
+            assert.equal(storage_get_length(), 1);
             assert.equal(storage_read("test_value"), "__test-value__");
         });
 
         it("Clears the storage correctly.", function () {
-            assert.equal(storage_get_length("localStorage"), 1);
+            assert.equal(storage_get_length(), 1);
 
-            storage_clear("localStorage");
+            storage_clear();
 
-            assert.equal(storage_get_length("localStorage"), 0);
+            assert.equal(storage_get_length(), 0);
         });
     });
 });
