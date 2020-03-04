@@ -35,6 +35,8 @@ console.log(store_read); // "hello"
 
 ```
 
+Here is a simple [demo](https://teeehn.github.io/storage-wrap/).
+
 
 
 
