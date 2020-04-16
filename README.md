@@ -15,7 +15,7 @@ npm i @tomnicolosi/storage-wrap
 Usage in JavaScript file:
 
 ```
-import StorageWrap from "@tomnicolosi/storage-wrap;
+import StorageWrap from "@tomnicolosi/storage-wrap";
 
 // Store a 'test-value' equal to 'hello' in localStorage.
 
